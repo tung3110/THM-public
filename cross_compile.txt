@@ -1,0 +1,14 @@
+B1. Co the tai ubuntu chay tren win
+-> google : how to install WSL on windows
+
+B2 . Tải gcc compiler cho pi zero
+sudo apt-get update
+sudo apt-get install gcc-arm-linux-gnueabihf
+
+B3 cd toi Paho src
+arm-linux-gnueabihf-gcc  *.c -c --static
+arm-linux-gnueabihf-ar rcs libPahoMqttC.a *.o
+
+cd code/
+make
+File tao ra ten la amz
